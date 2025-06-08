@@ -9,7 +9,7 @@ let username = "Orkhan";
 let greeting = 'Hello World!';
 
 // 2. Number (integers and decimals)
-let userAge = 25;
+let userAge = '25';
 let temperature = 36.6;
 let billion = 1e9; // 1000000000
 
