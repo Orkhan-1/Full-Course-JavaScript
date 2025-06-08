@@ -5,7 +5,7 @@
 // ---------------------------------
 
 // 1. String
-let username = "Alice";
+let username = "Orkhan";
 let greeting = 'Hello World!';
 
 // 2. Number (integers and decimals)
@@ -25,7 +25,7 @@ let explicitlyUndefined = undefined;
 let empty = null;
 
 // 6. BigInt (append 'n')
-let hugeNumber = 1234567890123456789012345678901234567890n;
+let bigNumber = 1234567890123456789012345678901234567890n;
 
 // 7. Symbol
 let uniqueId = Symbol("uniqueIdentifier");
