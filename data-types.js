@@ -1,7 +1,7 @@
 // JavaScript has dynamic types - the same variable can hold different data types
 
 // ===== JavaScript Data Types =====
-// Primitive Types (immutable)
+// Primitive Types
 // ---------------------------------
 
 // 1. String
@@ -30,13 +30,13 @@ let hugeNumber = 1234567890123456789012345678901234567890n;
 // 7. Symbol
 let uniqueId = Symbol("uniqueIdentifier");
 
-// Non-Primitive Types (mutable)
+// Non-Primitive Types
 // ---------------------------------
 
 // 1. Object
 let person = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: "Orkhan",
+  lastName: "Gasanov",
   age: 30
 };
 
