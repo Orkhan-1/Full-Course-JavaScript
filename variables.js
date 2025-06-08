@@ -2,10 +2,10 @@
 const TAX_RATE = 0.08;
 
 // let - for values that change over time
-let cartTotal = 0;
+let finalPrice = 0;
 let itemCount = 0;
 
-// var - function-scoped variable (old-school, but still valid)
+// var - function-scoped variable
 function addItem(price) {
   var discount = 0;
 
@@ -13,19 +13,19 @@ function addItem(price) {
     discount = 10;
   }
 
-  let finalPrice = price - discount;
-  cartTotal += finalPrice;
+  let priceAfterDiscount = price - discount;
+  finalPrice += priceAfterDiscount;
   itemCount++;
 
-  console.log(`Added item: $${finalPrice}`);
+  console.log(`Added item: $${priceAfterDiscount}`);
 }
 
 addItem(120);
 addItem(80);
 
 // const used for calculated total with tax (not reassigned after this)
-const totalWithTax = cartTotal + cartTotal * TAX_RATE;
+const totalWithTax = finalPrice + finalPrice * TAX_RATE;
 
 console.log(`Items in cart: ${itemCount}`);
-console.log(`Cart total before tax: $${cartTotal.toFixed(2)}`);
+console.log(`Cart total price tax: $${finalPrice.toFixed(2)}`);
 console.log(`Total with tax: $${totalWithTax.toFixed(2)}`);
